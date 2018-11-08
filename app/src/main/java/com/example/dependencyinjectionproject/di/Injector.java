@@ -17,8 +17,6 @@ public enum Injector {
   ApplicationComponent applicationComponent;
   MainComponent mainComponent;
 
-  Injector() {
-  }
 
   public void initApplicationComponent(MyApplication myApplication) {
     if (applicationComponent == null) {

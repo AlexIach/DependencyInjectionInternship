@@ -123,4 +123,10 @@ public class MainActivity extends AppCompatActivity implements IMyCallback {
     buttonGetAlluser = findViewById(R.id.buttonGetAllUsers);
     buttonGetUserById = findViewById(R.id.buttonGetUserById);
   }
+
+  @Override
+  protected void onDestroy() {
+    super.onDestroy();
+    Injector.INSTANCE.releaseMainComponent();
+  }
 }
